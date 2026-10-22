@@ -17,3 +17,5 @@ Le tailwind est mandataire (Je dois tout faire pour bien l'apprendre)
 Le JS Vanilla: Je dois le connaitre car c'est imperatif pour ce brief
 
 Ainsi de suite
+
+cantina-chi-wheat.vercel.app
