@@ -5,90 +5,137 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cantina</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            <div class="bg-[#315E43]" class="nav-principale">
-                <div class="Identite">
-                    <span class="Embleme">
-                        <div class="spout"><p>Vector</p></div>
-                    </span>
-                    <h1>cantina</h1>
-                </div>
-                <div class="navigation">
-                    <p>LA CUISINE YOUCODE</p>
-                    <article class="Lien">
-                        <span class="layout-dashboard">
-                            <p>Icone</p>
-                        </span>
-                        <p>Vue d'ensemble</p>
-                    </article>
-                    <article class="Lien">
-                        <span class="layout-dashboard">
-                            <p>Icone</p>
-                        </span>
-                        <p>Garde-manger</p>
-                    </article>
-                    <article class="Lien">
-                        <span class="layout-dashboard">
-                            <p>Icone</p>
-                        </span>
-                        <p>Historique</p>
-                    </article>
-                </div>
-                <div class="Conseil">
-                    <span>
-                        <p>Icone</p>
-                    </span>
-                    <p>L'automne à table</p>
-                    <p>Courges, coings et légumes du marché : place aux saveurs de saison.</p>
-                    <p>LOCAL & DE SAISON</p>
-                </div>
-                <div class="Signature">
-                    <p>Séparateur</p>
-                    <p>YouCode</p>
-                    <p>On apprend. On partage.</p>
-                </div>
+        <header >
+            <div class="Identite-Cantina">
+                <img src="img/SVGVector.svg">
+                <h1>cantina</h1>
             </div>
-            <div class="espace-gestion">
-                <section class="bg-[#DFE2D5]" class="Barre-d-application">
-                    <article class="Fil-d-ariane">
-                        <p>Espace responsable</p>
-                        <p>/</p>
-                        <p>Tableau de bord</p>
+            <div class="navigation">
+                <p>LA CUISINE YOUCODE</p>
+                <button class="Lien-1">
+                    <img src="img/layout-dashboard.png">
+                    <h6>Vue d'ensemble</h6>
+                </button>
+                <button class="Lien-2">
+                    <img src="img/cooking-pot.png">
+                    <h6>Garde-manger</h6>
+                </button>
+                <button class="Lien-3">
+                    <img src="img/history.png">
+                    <h6>Historique</h6>
+                </button>
+            </div>
+            <div class="Conseil">
+                <img src="img/leaf.png">
+                <h3>L'automne à table</h3>
+                <p>Courges, coings et légumes du marché : place aux saveurs de saison.</p>
+                <p>LOCAL & DE SAISON</p>
+            </div>
+            <div class="Signature">
+                <h2>YouCode</h2>
+                <p>On apprend. On partage.</p>
+            </div>
+        </header>
+        <main>
+            <section class="Barre-d-application">
+                <article class="Fil-d-ariane">
+                    <a href="#">Espace responsable</a>
+                    <button>/</button>
+                    <a href="#">Tableau de bord</a>
+                </article>
+                <article class="Preference-et-profil">
+                    <div class="Theme-clair-sombre">
+                        <button class="sun"><img src="img/Thème clair actif.png"></button>
+                        <button class="moon"><img src="img/Thème sombre.png"></button>
+                    </div>
+                    <button>|</button>
+                    <div class="Compte">
+                        <button>SB</button>
+                        <span class="Identitee">
+                            <h4>Salma Bennani</h4>
+                            <p>Responsable cantine</p>
+                        </span>
+                        <button><img src="img/chevron-down.png"></button>
+                    </div>
+                </article>
+            </section>
+            <section class="Tableau-d-bord">
+                <div class="Syntese-semaine">
+                    <article class="Accueil">
+                        <aside class="Titre-page">
+                            <span class="Repere">
+                                <img src="img/sprout.png">
+                                <p>BIEN MANGER, BIEN APPRENDRE</p>
+                            </span>
+                            <h2>Au menu cette semaine</h2>
+                            <p>Composez des repas de saison pour les apprenants Youcode</p>
+                        </aside>
+                        <aside class="Notification-succes">
+                            <span class="cicrcle-check">
+                                <img src="img/circle-check.png">
+                            </span>
+                            <span class="Message">
+                                <h3>Menu enregistré</h3>
+                                <p>Vos dernières affectations sont sauvegardées</p>
+                            </span>
+                            <span class="x">
+                                <img src="img/x.png">
+                            </span>
+                        </aside>
                     </article>
-                    <article class="Preference-et-profil">
-                        <div class="Theme-clair-sombre">
-                            <span class="clair-actif">
-                                <div class="sun">
-                                    <p>Vector</p>
-                                </div>
+                    <article class="Indicateurs">
+                        <aside class="Indicateur-1">
+                            <span class="Valeur-contexte">
+                                <p>RECETTE EN RÉSERVE</p>
+                                <p>5</p>
+                                <p>disponibles . 15 recettes au total</p>
                             </span>
-                            <span class="sombre">
-                                <div class="moon">
-                                    <p>Vector</p>
-                                </div>
+                            <span>
+                                <p>Vector</p>
                             </span>
-                        </div>
-                        <p>|</p>
-                        <div class="Compte">
-                            <span class="Avatar">
-                                <p>SB</p>
+                        </aside>
+                        <!-- <aside class="Indicateur-2">
+                            <span class="Valeur-contexte">
+                                <p>JOURS PRÊTS</p>
+                                <p>2/5</p>
+                                <p>10 créneaux remplis sur 15</p>
                             </span>
-                            <span class="Identite">
-                                <p>Salma Bennani</p>
-                                <p>Responsable cantine</p>
+                            <span>
+                                <p>Vector</p>
+                            </span>  
+                        </aside>
+                        <aside class="Indicateur-3">
+                            <span class="Valeur-contexte">
+                                <p>COÛT APPRENANT</p>
+                                <p>156 DH</p>
+                                <p>cette semaine . total provisoir</p>
                             </span>
-                            <span class="chevron-down">
-                                <div>
-                                    <p>Vector</p>
-                                </div>
+                            <span>
+                                <p>Vector</p>
                             </span>
-                        </div>
+                        </aside>
+                        <aside class="Indicateur-4">
+                            <span class="Valeur-contexte">
+                                <p>ÉQUILIBRE ALIMENTAIRE</p>
+                                <p>Assuré</p>
+                                <p>2 plats végétariens au planning</p>
+                            </span>
+                            <span>
+                                <p>Vector</p>
+                            </span>
+                        </aside> -->
                     </article>
-                </section>
+                </div>
+            </section>
+        </main>
+        
+        <!-- <main class="kabir">
+            <div class="espace">
                 <section class="Tableau-d-bord">
                     <div class="Syntese-semaine">
                         <article class="Accueil">
@@ -1281,6 +1328,6 @@
                     </div>
                 </section>
             </div>
-        </main>
+        </main> -->
     </body>
 </html>
