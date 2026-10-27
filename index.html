@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div class="Conseil">
-                <img src="img/leaf.png">
+                <img src="img/left.png">
                 <h3>L'automne à table</h3>
                 <p>Courges, coings et légumes du marché : place aux saveurs de saison.</p>
                 <p>LOCAL & DE SAISON</p>
@@ -64,7 +64,18 @@
                             <h4>Salma Bennani</h4>
                             <p>Responsable cantine</p>
                         </span>
-                        <button><img src="img/chevron-down.png"></button>
+                        <!-- <button>
+                            <img src="img/chevron-down.png">
+                        </button> -->
+                        <div>
+                            <!-- <label for="sujet">Sujet</label> -->
+                            <select id="sujet" name="sujet">
+                                <option><img src="img/chevron-down.png"></option>
+                                <option value="info">Salma Bennni</option>
+                                <option value="devis">Idriss Fassi</option>
+                                <option>Mohammed Ribati</option>
+                            </select>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -80,16 +91,16 @@
                             <p>Composez des repas de saison pour les apprenants Youcode</p>
                         </aside>
                         <aside class="Notification-succes">
-                            <span class="cicrcle-check">
+                            <button class="cicrcle-check">
                                 <img src="img/circle-check.png">
-                            </span>
+                            </button>
                             <span class="Message">
                                 <h3>Menu enregistré</h3>
                                 <p>Vos dernières affectations sont sauvegardées</p>
                             </span>
-                            <span class="x">
+                            <button class="x">
                                 <img src="img/x.png">
-                            </span>
+                            </button>
                         </aside>
                     </article>
                     <article class="Indicateurs">
@@ -100,7 +111,9 @@
                                 <h3>5</h3>
                                 <p>disponibles . 15 recettes au total</p>
                             </span>
-                            <img src="img/cooking-pot.png">
+                            <button>
+                                <img src="img/cooking-pot.png">
+                            </button>
                         </aside>
 
                         <aside class="Indicateur-2">
@@ -109,7 +122,9 @@
                                 <h3>2/5</h3>
                                 <p>10 créneaux remplis sur 15</p>
                             </span>
-                            <img src="img/calendar-check.png">
+                            <button>
+                                <img src="img/calendar-check.png">
+                            </button>
                         </aside>
 
                         <aside class="Indicateur-3">
@@ -118,7 +133,9 @@
                                 <h3>156 DH</h3>
                                 <p>cette semaine . total provisoir</p>
                             </span>
-                            <img src="img/wallet.png">
+                            <button>
+                                <img src="img/wallet.png">
+                            </button>
                         </aside>
 
                         <aside class="Indicateur-4">
@@ -127,7 +144,9 @@
                                 <h3>Assuré</h3>
                                 <p>2 plats végétariens au planning</p>
                             </span>
-                            <img src="img/leaf.png">
+                            <button>
+                                <img src="img/left.png">
+                            </button>
                         </aside>
 
                     </article>
@@ -170,18 +189,16 @@
                                     <p>Vue tableau</p>
                                 </div>
                             </span>
-                            <span class="Imprimer">
-                                <button class="printer">
-                                    <img src="img/printer.png">
-                                </button>
+                            <button class="Imprimer">
+                                <img src="img/printer.png">
                                 <p>Imprimer</p>  
-                            </span>
-                            <span class="Completer-semaine">
-                                <button class="wand-sparkles">
+                            </button>
+                            <button class="Completer-semaine">
+                                <span class="wand-sparkles">
                                     <img src="img/wand-sparkles.png">
-                                </button>
+                                </span>
                                 <p>Compléter la semaine</p>
-                            </span>
+                            </button>
                         </aside>
                     </article>
                     <article class="Menus-semaine">
@@ -205,9 +222,9 @@
                                 <p>Zaalouk d'aubergies</p>
                                 <div class="Qualite-retrait">
                                     <p>Végétarien</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -220,9 +237,9 @@
                                 <p>Tajine de poulet aux olives</p>
                                 <div class="Qualite-retrait">
                                     <p>Classique</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -235,9 +252,9 @@
                                 <p>Oranges à la cannelle</p>
                                 <div class="Qualite-retrait">
                                     <p>Bio</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Budget-quotidien">
@@ -271,9 +288,9 @@
                                 <p>Carottes au umin</p>
                                 <div class="Qualite-retrait">
                                     <p>Bio</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -286,9 +303,9 @@
                                 <p>Couscous aux sept légumes</p>
                                 <div class="Qualite-retrait">
                                     <p>Végétarien</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -301,9 +318,9 @@
                                 <p>Yaourt aux dattes</p>
                                 <div class="Qualite-retrait">
                                     <p>Classique</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Budget-quotidien">
@@ -337,9 +354,9 @@
                                 <p>Salade de betteraves</p>
                                 <div class="Qualite-retrait">
                                     <p>Bio</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -352,9 +369,9 @@
                                 <p>Poisson à la chermoula</p>
                                 <div class="Qualite-retrait">
                                     <p>Classique</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -364,9 +381,9 @@
                                     </span>
                                 </div>
                                 <div class="Ajouter-creneau">
-                                    <span class="Plus">
-                                        <p>Vector</p>
-                                    </span>
+                                    <button class="Plus">
+                                        <img src="img/plus.png">
+                                    </button>
                                     <p>Choisir une recette</p>
                                 </div>
                                 <p>Depuis le garde-manger</p>
@@ -385,7 +402,7 @@
                         <aside class="Jeudi">
                             <div class="Jour-etat">
                                 <span class="Date">
-                                    <p>Lundi</p>
+                                    <p>Jeudi</p>
                                     <p>22 oct.</p>
                                 </span>
                                 <span class="Badge">
@@ -397,15 +414,14 @@
                                     <span class="Badge">
                                         <p>Entrée</p>
                                     </span>
-                                    <p>9 DH</p>
                                 </div>
-                                <p>Zaalouk d'aubergies</p>
-                                <div class="Qualite-retrait">
-                                    <p class="bg">Végétarien</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
                                 </div>
+                                <p>Depuis le garde-manger</p>
                             </div>
                             <div class="Creneau-repas">
                                 <div class="Categorie-prix">
@@ -414,12 +430,12 @@
                                     </span>
                                     <p>28 DH</p>
                                 </div>
-                                <p>Tajine de poulet aux olives</p>
+                                <p>Lentilles à la marocaine</p>
                                 <div class="Qualite-retrait">
-                                    <p>Classique</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                    <p>Végétarien</p>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Creneau-repas">
@@ -427,25 +443,24 @@
                                     <span class="Badge">
                                         <p>Dessert</p>
                                     </span>
-                                    <p>7 DH</p>
                                 </div>
-                                <p>Oranges à la cannelle</p>
-                                <div class="Qualite-retrait">
-                                    <p>Bio</p>
-                                    <span>
-                                        <p>Vector</p>
-                                    </span>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
                                 </div>
+                                <p>Depuis le garde-manger</p>
                             </div>
                             <div class="Budget-quotidien">
                                 <span class="Total">
                                     <p>Total du jour</p>
-                                    <p>44/50 DH max.</p>
+                                    <p>24/50 DH max.</p>
                                 </span>
                                 <span class="Jauge-budget">
                                     <p>Barre de Progression</p>
                                 </span>
-                                <p>6 DH de marge</p>
+                                <p>26 DH disponibles . à compléter</p>
                             </div>
                         </aside>
                         <aside class="Vendredi">
@@ -465,9 +480,9 @@
                                     </span>
                                 </div>
                                 <div class="Ajouter-créneau">
-                                    <span class="plus">
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
                                     <p>Choisir une recette</p>
                                 </div>
                                 <p>Depuis le garde-manger</p>
@@ -479,9 +494,9 @@
                                     </span>
                                 </div>
                                 <div class="Ajouter-créneau">
-                                    <span class="plus">
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
                                     <p>Choisir une recette</p>
                                 </div>
                                 <p>Depuis le garde-manger</p>
@@ -496,9 +511,9 @@
                                 <p>Compote de coings</p>
                                 <div class="Qualite-retrait">
                                     <p>Bio</p>
-                                    <span class="x">
-                                        <p>Vector</p>
-                                    </span>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
                                 </div>
                             </div>
                             <div class="Budget-quotidien">
@@ -515,22 +530,22 @@
                     </article>
                     <article class="Regles-planning">
                         <aside class="Plafond">
-                            <span class="shield-check">
-                                <p>Vector</p>
-                            </span>
+                            <button class="shield-check">
+                                <img src="img/shield-check.png">
+                            </button>
                             <p>50 DH maximum par jour et par apprenant. Aucun dépassement autorisé</p>
                         </aside>
                         <aside class="Regle-affectation">
-                            <span class="info">
-                                <p>Vector</p>
-                            </span>
+                            <button class="info">
+                                <img src="img/info.png">
+                            </button>
                             <p>Une recette, un seul créneau, dans sa catégorie.</p>
                         </aside>
                     </article>
                 </div>
 
                 <div class="Garde-manger">
-                    <section class="Titre-ajout">
+                    <section class="Titre-ajout ">
                         <article class="Introduction">
                             <span class="Titre-nombre">
                                 <p>Le garde-manger</p>
@@ -564,9 +579,9 @@
                             </aside>
                         </article>
                         <article class="Champ-recherche">
-                            <aside class="search">
-                                <p>Vector</p>
-                            </aside>
+                            <button class="search">
+                                <img src="img/search.png">
+                            </button>
                             <p>Recherche une recette</p>
                             <p>¤ K</p>
                         </article>
@@ -583,7 +598,7 @@
 
                     <section class="Recettes-disponibles">
                         <article class="Fiche-recette-1">
-                            <img>
+                            <img src="img/Photo du plat 1.png">
                             <aside class="Détails-recette">
                                 <span class="Categorie-tarif">
                                     <div class="Badge">
@@ -597,29 +612,29 @@
                                         <p>Bio</p>
                                     </div>
                                     <div class="Actions-recettes">
-                                        <aside class="pencil">
-                                            <p>Vector</p>
-                                        </aside>
-                                        <aside class="trash-2">
-                                            <p>Vector</p>
-                                        </aside>
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                     </div>
                                 </span>
                                 <span class="Selecteur-affectations">
                                     <div class="Affectation">
-                                        <span class="archive">
-                                            <p>Vector</p>
-                                        </span>
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
                                         <p>En réserve</p>
                                     </div>
-                                    <div class="chevron-down">
-                                        <p>Vector</p>
-                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
                                 </span>
                             </aside>
                         </article>
                         <article class="Fiche-recette-2">
-                            <img>
+                            <img src="img/Photo du plat 2.png">
                             <aside class="Détails-recette">
                                 <span class="Categorie-tarif">
                                     <div class="Badge">
@@ -633,29 +648,29 @@
                                         <p>Bio</p>
                                     </div>
                                     <div class="Actions-recettes">
-                                        <aside class="pencil">
-                                            <p>Vector</p>
-                                        </aside>
-                                        <aside class="trash-2">
-                                            <p>Vector</p>
-                                        </aside>
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                     </div>
                                 </span>
                                 <span class="Selecteur-affectations">
                                     <div class="Affectation">
-                                        <span class="archive">
-                                            <p>Vector</p>
-                                        </span>
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
                                         <p>En réserve</p>
                                     </div>
-                                    <div class="chevron-down">
-                                        <p>Vector</p>
-                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
                                 </span>
                             </aside>
                         </article>
                         <article class="Fiche-recette-3">
-                            <img>
+                            <img src="img/Photo du plat 3.png">
                             <aside class="Détails-recette">
                                 <span class="Categorie-tarif">
                                     <div class="Badge">
@@ -669,29 +684,29 @@
                                         <p>Végétarien</p>
                                     </div>
                                     <div class="Actions-recettes">
-                                        <aside class="pencil">
-                                            <p>Vector</p>
-                                        </aside>
-                                        <aside class="trash-2">
-                                            <p>Vector</p>
-                                        </aside>
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                     </div>
                                 </span>
                                 <span class="Selecteur-affectations">
                                     <div class="Affectation">
-                                        <span class="archive">
-                                            <p>Vector</p>
-                                        </span>
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
                                         <p>En réserve</p>
                                     </div>
-                                    <div class="chevron-down">
-                                        <p>Vector</p>
-                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
                                 </span>
                             </aside>
                         </article>
                         <article class="Fiche-recette-4">
-                            <img>
+                            <img src="img/Photo du plat 4.png">
                             <aside class="Détails-recette">
                                 <span class="Categorie-tarif">
                                     <div class="Badge">
@@ -705,29 +720,29 @@
                                         <p>Végétarien</p>
                                     </div>
                                     <div class="Actions-recettes">
-                                        <aside class="pencil">
-                                            <p>Vector</p>
-                                        </aside>
-                                        <aside class="trash-2">
-                                            <p>Vector</p>
-                                        </aside>
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                     </div>
                                 </span>
                                 <span class="Selecteur-affectations">
                                     <div class="Affectation">
-                                        <span class="archive">
-                                            <p>Vector</p>
-                                        </span>
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
                                         <p>En réserve</p>
                                     </div>
-                                    <div class="chevron-down">
-                                        <p>Vector</p>
-                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
                                 </span>
                             </aside>
                         </article>
                         <article class="Fiche-recette-5">
-                            <img>
+                            <img src="img/Photo du plat 5.png">
                             <aside class="Détails-recette">
                                 <span class="Categorie-tarif">
                                     <div class="Badge">
@@ -741,24 +756,24 @@
                                         <p>Classique</p>
                                     </div>
                                     <div class="Actions-recettes">
-                                        <aside class="pencil">
-                                            <p>Vector</p>
-                                        </aside>
-                                        <aside class="trash-2">
-                                            <p>Vector</p>
-                                        </aside>
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                     </div>
                                 </span>
                                 <span class="Selecteur-affectations">
                                     <div class="Affectation">
-                                        <span class="archive">
-                                            <p>Vector</p>
-                                        </span>
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
                                         <p>En réserve</p>
                                     </div>
-                                    <div class="chevron-down">
-                                        <p>Vector</p>
-                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
                                 </span>
                             </aside>
                         </article>
@@ -766,9 +781,9 @@
 
                     <section class="Affectations">
                         <aside class="Titre-groupe">
-                            <span class="lock-keyhole">
-                                <p>Vector</p>
-                            </span>
+                            <button class="lock-keyhole">
+                                <img src="img/lock-keyhole.png">
+                            </button>
                             <p>DÉJA AU PLANNING</p>
                             <p>10 recettes assignées</p>
                         </aside>
@@ -791,26 +806,26 @@
                                             <p>Végétarien</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Lundi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Lundi . Entrée</p>
                                 </div>
@@ -829,26 +844,26 @@
                                             <p>Classique</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Lundi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Lundi . Plat principal</p>
                                 </div>
@@ -867,26 +882,24 @@
                                             <p>Bio</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
-                                            <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
-                                            </div>
+                                            <button>
+                                                <img src="img/calendar-check.png">
+                                            </button>
                                             <p>Lundi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Lundi . Dessert</p>
                                 </div>
@@ -905,26 +918,26 @@
                                             <p>Bio</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Mardi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Mardi . Entrée</p>
                                 </div>
@@ -943,26 +956,26 @@
                                             <p>Végétarien</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Mardi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Mardi . Plat principal</p>
                                 </div>
@@ -983,26 +996,26 @@
                                             <p>Classique</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Mardi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Mardi . Dessert</p>
                                 </div>
@@ -1021,26 +1034,26 @@
                                             <p>Bio</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Mercredi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Mercredi . Entrée</p>
                                 </div>
@@ -1059,26 +1072,26 @@
                                             <p>Classique</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Mercredi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Mercredi . Plat principal</p>
                                 </div>
@@ -1097,26 +1110,26 @@
                                             <p>Végétarien</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Jeudi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Jeudi . Plat principal</p>
                                 </div>
@@ -1135,26 +1148,26 @@
                                             <p>Bio</p>
                                         </div>
                                         <div class="Actions-recette">
-                                            <div class="lock-keyhole">
-                                                <p>Vector</p>
-                                            </div>
-                                            <div class="trash-2">
-                                                <p>Vector</p>
-                                            </div>
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
                                         </div>
                                     </span>
                                     <span class="Selecteur-affectation">
                                         <div class="Affectation">
                                             <div class="calendar-check">
-                                                <span>
-                                                    <p>Vector</p>
-                                                </span>
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
                                             </div>
                                             <p>Vendredi</p>
                                         </div>
-                                        <div class="chevron-down">
-                                            <p>Vector</p>
-                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
                                     </span>
                                     <p>Assigné : Vendredi . Dessert</p>
                                 </div>
@@ -1261,7 +1274,7 @@
                 </div>
 
             </section>
-
+            <script src="script.js" defer></script>
         </main>
     </body>
 </html>

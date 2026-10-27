@@ -6,30 +6,54 @@ body {
     background-size: cover;
     background-attachment: fixed; /* Optionnel : garde l'image fixe au scroll */
     margin: 0;
+    padding: 0;
+    gap: 0;
+    flex-direction: row;
+    
+   
 }
 
 header {
     background-color: #315E43;
+    opacity: 0.9;
     flex-direction: column;
     width: 200px;
-    height: 400vh;
-    padding: 30px 20px 24px;
+    padding: 30px 20px 24px 24px;
     gap: 32px;
     display: flex;
     min-height: 100vh;
+    justify-content: space-between;
 
     .Identite-Cantina {
         display: flex;
         flex-direction: row;
-        padding: 5px 20px 10px 5px;
+        gap: 10px;
+        padding: 0;
+        justify-content: space-between;
 
         h1 {
-            color: whitesmoke;
+            color: rgb(255, 255, 255);
             display:contents;
+        }
+
+        img {
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            padding: 0;
+            align-items: center;
         }
     }
 
     .navigation {
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        gap: 9px;
+        padding: 0;
+        align-items: first baseline;
+        justify-content: space-between;
+
         p {
             color: #b9ceb8;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -37,23 +61,47 @@ header {
             font-weight: normal;
         }
 
-        button.Lien-1, button.Lien-2, button.Lien-3  {
-            background-color: #315E43;
+        /* .Lien-1  {
+            background-color: #FFFFFF;
+            opacity: 0.1;
             display: flex;
             flex-direction: row;
-            padding: initial;
+            padding: 0 11px;
+            justify-content: space-between;
             gap: 10px;
 
             img {
-                display: inline;
+                background-color: #B9CEB8;
+                display: flex;
+                flex-direction: initial;
             }
 
             h6 {
-                color: #D0DDC8;
-                display:flex;
-                flex-direction: row;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
-        }
+        } */
+
+        /* .Lien-2, .Lien-3  {
+            opacity: 0.1;
+            display: flex;
+            flex-direction: row;
+            padding: 0 11px;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+
+            img {
+                background-color: black;
+                display: flex;
+                flex-direction: initial;
+            }
+
+            h6 {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 10px;
+                font-weight: normal;
+            }
+        } */
     }
 
     .Conseil {
@@ -82,7 +130,7 @@ header {
 }
 
 main {
-    flex: 1; /* Remplace le width: 500% pour occuper proprement l'espace restant */
+    /* flex: 1; Remplace le width: 500% pour occuper proprement l'espace restant */
     display: flex;
     flex-direction: column; /* Empile la barre d'application et le tableau de bord de haut en bas */
     gap: 0;
@@ -90,7 +138,7 @@ main {
 }
 
 .Barre-d-application {
-    width: 100%;
+    width: 100%; 
     background-color: rgba(223, 226, 213, 0.9);
     display: flex;
     justify-content: space-between;
@@ -347,7 +395,6 @@ main {
                     gap: 5px;
                     padding: 0;
                     align-items: flex-start;
-                    /* background-color: aqua; */
                 }
             }
         }
@@ -359,8 +406,7 @@ main {
         gap: 16px;
         align-items: stretch;
         width: 100%;
-        justify-content: space-between;
-        /* background-color: aqua; */
+        /* justify-content: space-between; */
 
         .Commandes-planning {
             display: flex;
@@ -368,14 +414,13 @@ main {
             align-items: flex-start;
             gap: 10px;
             padding: 0;
-            background-color: aqua;
+            justify-content: space-between;
 
             .Semaine-affiche {
                 display: flex;
                 flex-direction: row;
                 gap: 14px;
                 align-items: flex-start;
-                /* background-color: aqua; */
 
                 .Navigation-semaine {
                     display: flex;
@@ -383,16 +428,18 @@ main {
                     gap: 12px;
                     padding: 0 10px;
                     align-items: flex-start;
-                    background-color: chartreuse;
+                    justify-content: space-between;
+                    background-color: #FFFEFA;
                 }
 
                 .Badge {
+                    background-color: #EEEBDD;
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
                     gap: 0;
                     padding: 3px 7px;
-                    background-color: red;
+                    justify-content: space-between;
                 }
             }
 
@@ -402,24 +449,55 @@ main {
                 gap: 10px;
                 padding: 0;
                 align-items: flex-start;
-                /* background-color: chartreuse; */
+                justify-content: space-between;
 
                 .Mode-affichage {
                     display: flex;
                     flex-direction: row;
-                    align-items: flex-start;
+                    align-items: first baseline;
                     gap: 3px;
                     padding: 3px 3px;
-                    background-color: mediumblue;
+                    justify-content: space-between;
+                    background-color: #EEEBDD;
+
+                    .Vue-cartes-actives {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 10px;
+                        gap: 6px;
+                        background-color: #FFFEFA;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 11px;
+                            font-weight: bold;
+                        }
+                    }
+                    
+                    .Vue-tableau {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 10px;
+                        gap: 6px;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 10px;
+                            font-weight: normal;
+                            justify-content: space-between;
+                        }
+                    }
                 }
 
                 .Imprimer {
                     display: flex;
                     flex-direction: row;
-                    align-items: flex-start;
+                    align-items: center;
                     gap: 8px;
                     padding: 0 16px;
-                    background-color: chartreuse;
+                    justify-content: space-between;
+                    /* background-color: #FFFEFA; */
                 }
 
                 .Completer-semaine {
@@ -429,7 +507,11 @@ main {
                     justify-content: center;
                     gap: 8px;
                     padding: 0 16px;
-                    background-color: magenta;
+                    background-color: #315E43;
+
+                    p {
+                        color: #FFFFFF;
+                    }
                 }
             }
         }
@@ -440,7 +522,8 @@ main {
             align-items: flex-start;
             gap: 12px;
             padding: 0;
-            background-color: ghostwhite;
+            width: 100%;
+            justify-content: space-between;
 
             .Lundi {
                 background-color: #DFE2D5;
@@ -449,6 +532,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 12px 12px;
+                justify-content: space-between;
 
                 .Jour-etat {
                     display: flex;
@@ -456,14 +540,14 @@ main {
                     padding: 3px 0 5px 0;
                     align-items: center;
                     gap: 15px;
-                    /* background-color: aqua; */
+                    justify-content: space-between;
 
                     .Date {
                         display: flex;
                         flex-direction: row;
                         gap: 8px;
                         align-items: last baseline;
-                        background-color: aqua;
+                        justify-content: space-between;
                     }
 
                     .Badge {
@@ -471,7 +555,7 @@ main {
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
-                        background-color: red;
+                        justify-content: space-between;
                     }
                 }
 
@@ -481,7 +565,7 @@ main {
                     gap: 9px;
                     padding: 12px 12px;
                     align-items: flex-start;
-                    background-color: khaki;
+                    justify-content: space-between;
                 }
 
                 .Budget-quotidien {
@@ -490,7 +574,7 @@ main {
                     gap: 8px;
                     padding: 5px 0 3px 0;
                     align-items: flex-start;
-                    background-color: violet;
+                    justify-content: space-between;
                 }
             }
 
@@ -501,6 +585,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 12px 12px;
+                justify-content: space-between;
 
                 .Jour-etat {
                     display: flex;
@@ -508,14 +593,14 @@ main {
                     padding: 3px 0 5px 0;
                     align-items: center;
                     gap: 15px;
-                    /* background-color: aqua; */
+                    justify-content: space-between;
 
                     .Date {
                         display: flex;
                         flex-direction: row;
                         gap: 8px;
                         align-items: last baseline;
-                        background-color: aqua;
+                        justify-content: space-between;
                     }
 
                     .Badge {
@@ -523,7 +608,7 @@ main {
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
-                        background-color: red;
+                        justify-content: space-between;
                     }
                 }
 
@@ -533,7 +618,7 @@ main {
                     gap: 9px;
                     padding: 12px 12px;
                     align-items: flex-start;
-                    background-color: khaki;
+                    justify-content: space-between;
                 }
 
                 .Budget-quotidien {
@@ -542,7 +627,7 @@ main {
                     gap: 8px;
                     padding: 5px 0 3px 0;
                     align-items: flex-start;
-                    background-color: violet;
+                    justify-content: space-between;
                 }
             }
 
@@ -553,6 +638,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 12px 12px;
+                justify-content: space-between;
 
                 .Jour-etat {
                     display: flex;
@@ -560,14 +646,14 @@ main {
                     padding: 3px 0 5px 0;
                     align-items: center;
                     gap: 15px;
-                    /* background-color: aqua; */
+                    justify-content: space-between;
 
                     .Date {
                         display: flex;
                         flex-direction: row;
                         gap: 8px;
-                        align-items: last baseline;
-                        background-color: aqua;
+                        /* align-items: last baseline; */
+                        justify-content: space-between;
                     }
 
                     .Badge {
@@ -575,7 +661,7 @@ main {
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
-                        background-color: red;
+                        justify-content: space-between;
                     }
                 }
 
@@ -584,8 +670,8 @@ main {
                     flex-direction: column;
                     gap: 9px;
                     padding: 12px 12px;
+                    justify-content: space-between;
                     align-items: flex-start;
-                    background-color: khaki;
                 }
 
                 .Budget-quotidien {
@@ -594,7 +680,7 @@ main {
                     gap: 8px;
                     padding: 5px 0 3px 0;
                     align-items: flex-start;
-                    background-color: violet;
+                    justify-content: space-between;
                 }
             }
 
@@ -605,6 +691,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 12px 12px;
+                justify-content: space-between;
 
                 .Jour-etat {
                     display: flex;
@@ -612,14 +699,14 @@ main {
                     padding: 3px 0 5px 0;
                     align-items: center;
                     gap: 15px;
-                    /* background-color: aqua; */
+                    justify-content: space-between;
 
                     .Date {
                         display: flex;
                         flex-direction: row;
                         gap: 8px;
                         align-items: last baseline;
-                        background-color: aqua;
+                        justify-content: space-between;
                     }
 
                     .Badge {
@@ -627,7 +714,7 @@ main {
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
-                        background-color: red;
+                        justify-content: space-between;
                     }
                 }
 
@@ -637,7 +724,7 @@ main {
                     gap: 9px;
                     padding: 12px 12px;
                     align-items: flex-start;
-                    background-color: khaki;
+                    justify-content: space-between;
                 }
 
                 .Budget-quotidien {
@@ -645,8 +732,8 @@ main {
                     flex-direction: column;
                     gap: 8px;
                     padding: 5px 0 3px 0;
+                    justify-content: space-between;
                     align-items: flex-start;
-                    background-color: violet;
                 }
             }
 
@@ -657,6 +744,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 12px 12px;
+                justify-content: space-between;
 
                 .Jour-etat {
                     display: flex;
@@ -664,14 +752,14 @@ main {
                     padding: 3px 0 5px 0;
                     align-items: center;
                     gap: 15px;
-                    /* background-color: aqua; */
+                    justify-content: space-between;
 
                     .Date {
                         display: flex;
                         flex-direction: row;
                         gap: 8px;
                         align-items: last baseline;
-                        background-color: aqua;
+                        justify-content: space-between;
                     }
 
                     .Badge {
@@ -679,7 +767,7 @@ main {
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
-                        background-color: red;
+                        justify-content: space-between;
                     }
                 }
 
@@ -689,7 +777,7 @@ main {
                     gap: 9px;
                     padding: 12px 12px;
                     align-items: flex-start;
-                    background-color: khaki;
+                    justify-content: space-between;
                 }
 
                 .Budget-quotidien {
@@ -697,8 +785,8 @@ main {
                     flex-direction: column;
                     gap: 8px;
                     padding: 5px 0 3px 0;
+                    justify-content: space-between;
                     align-items: flex-start;
-                    background-color: violet;
                 }
             }
         }
@@ -710,6 +798,7 @@ main {
             gap: 20px;
             padding: 0;
             width: 100%;
+            justify-content: space-between;
 
             .Plafond {
                 flex: 1;
@@ -719,7 +808,7 @@ main {
                 align-items: flex-start;
                 padding: 0;
                 width: 100%;
-                background-color: cornflowerblue;
+                justify-content: space-between;
             }
 
             .Regle-affectation {
@@ -729,6 +818,7 @@ main {
                 flex-direction: row;
                 align-items: flex-start;
                 gap: 7px;
+                justify-content: space-between;
                 background-color: #6ba883;
             }
         }
@@ -738,17 +828,16 @@ main {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        align-items: flex-start;
         padding: 0;
-        /* background-color: aqua; */
+        justify-content: space-between;
 
         .Titre-ajout {
             display: flex;
             flex-direction: row;
-            gap: 30px;
-            /* margin: 100%; */
+            gap: 10px;
             padding: 0;
             align-items: center;
+            justify-content: space-between;
 
             .Introduction {
                 display: flex;
@@ -756,6 +845,7 @@ main {
                 align-items: first baseline;
                 gap: 5px;
                 padding: 0;
+                justify-content: space-between;
 
                 .Titre-nombre {
                     display: flex;
@@ -763,15 +853,18 @@ main {
                     align-items: flex-start;
                     gap: 10px;
                     padding: 0;
-                    /* background-color: darkorange; */
+                    justify-content: space-between;
+
                     .Badge {
                         display: flex;
                         flex-direction: row;
                         gap: 0;
                         padding: 3px 7px;
+                        justify-content: space-between;
                         align-items: first baseline;
                         background-color: #EEEBDD;
                     }
+
                     p {
                         color: #253C30;
                     }
@@ -784,6 +877,7 @@ main {
                 padding: 0 16px;
                 gap: 8px;
                 align-items: center;
+                justify-content: space-between;
                 background-color: #315E43;
             }
         }
@@ -791,6 +885,7 @@ main {
         .Recherches-filtres {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             align-items: center;
             gap: 20px;
             padding: 0;
@@ -801,6 +896,7 @@ main {
                 align-items: first baseline;
                 gap: 6px;
                 padding: 0;
+                justify-content: space-between;
             }
 
             .Champ-recherche {
@@ -809,6 +905,7 @@ main {
                 align-items: flex-start;
                 gap: 9px;
                 padding: 0 12px;
+                justify-content: space-between;
             }
         }
 
@@ -818,11 +915,13 @@ main {
             align-items: center;
             gap: 20px;
             padding: 0;
+            justify-content: space-between;
 
             .Titre-groupe {
                 display: flex;
                 gap: 8px;
                 padding: 0;
+                justify-content: space-between;
                 flex-direction: row;
                 align-items: flex-start;
             }
@@ -831,9 +930,10 @@ main {
         .Recettes-disponibles {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             gap: 12px;
             padding: 0;
-            align-items: first baseline;
+            /* align-items: first baseline; */
 
             .Fiche-recette-1 {
                 display: flex;
@@ -841,6 +941,7 @@ main {
                 align-items: first baseline;
                 padding: 0;
                 gap: 0;
+                justify-content: space-between;
             }
 
             .Fiche-recette-2 {
@@ -849,6 +950,7 @@ main {
                 align-items: first baseline;
                 padding: 0;
                 gap: 0;
+                justify-content: space-between;
             }
 
             .Fiche-recette-3 {
@@ -856,6 +958,7 @@ main {
                 flex-direction: column;
                 align-items: first baseline;
                 padding: 0;
+                justify-content: space-between;
                 gap: 0;
             }
 
@@ -864,6 +967,7 @@ main {
                 flex-direction: column;
                 align-items: first baseline;
                 padding: 0;
+                justify-content: space-between;
                 gap: 0;
             }
 
@@ -872,6 +976,7 @@ main {
                 flex-direction: column;
                 align-items: first baseline;
                 padding: 0;
+                justify-content: space-between;
                 gap: 0;
             }
         }
@@ -882,12 +987,14 @@ main {
             padding: 20px;
             padding: 0;
             align-items: center;
+            justify-content: space-between;
 
             .Titre-groupe{
                 display: flex;
                 flex-direction: row;
                 gap: 8px;
                 padding: 0;
+                justify-content: space-between;
                 align-items: flex-start;
             }
         }
@@ -897,15 +1004,16 @@ main {
             flex-direction: column;
             gap: 12px;
             padding: 0;
-            align-items: first baseline;
+            /* align-items: stretch; */
+            justify-content: space-between;
 
             .Recette-1 {
                 display: flex;
                 flex-direction: row;
                 gap: 12px;
                 align-items: first baseline;
+                justify-content: space-between;
                 padding: 0;
-                background-color: aqua;
             }
 
             .Recette-2 {
@@ -913,8 +1021,8 @@ main {
                 flex-direction: row;
                 gap: 12px;
                 padding: 0;
+                justify-content: space-between;
                 align-items: first baseline;
-                background-color: red;
             }
         }
 
@@ -925,22 +1033,25 @@ main {
         display: flex;
         flex-direction: column;
         gap: 18px;
-        align-items: first baseline;
+        /* align-items: first baseline; */
         padding: 0;
+        justify-content: space-between;
 
         .Etats-gestion {
             display: flex;
             flex-direction: row;
-            align-items: first baseline;
+            /* align-items: first baseline; */
             gap: 18px;
             padding: 0;
+            justify-content: space-between;
 
             .Ajout-recette {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                align-items: first baseline;
+                /* align-items: first baseline; */
                 padding: 18px 18px;
+                justify-content: space-between;
 
                 .En-tete-formulaire {
                     display: flex;
@@ -948,7 +1059,7 @@ main {
                     align-items: center;
                     padding: 0;
                     gap: 20px;
-                    background-color: aqua;
+                    justify-content: space-between;
 
                     .Titre {
                         display: flex;
@@ -956,7 +1067,7 @@ main {
                         align-items: flex-start;
                         gap: 9px;
                         padding: 0;
-                        background-color: fuchsia;
+                        justify-content: space-between;
                     }
                 }
 
@@ -966,7 +1077,7 @@ main {
                     align-items: first baseline;
                     padding: 0;
                     gap: 14px;
-                    background-color: mediumorchid;
+                    justify-content: space-between;
 
                     .Champ-1 {
                         display: flex;
@@ -974,6 +1085,7 @@ main {
                         align-items: first baseline;
                         gap: 6px;
                         padding: 0;
+                        justify-content: space-between;
                     }
 
                     .Champ-2 {
@@ -982,6 +1094,7 @@ main {
                         align-items: first baseline;
                         gap: 6px;
                         padding: 0;
+                        justify-content: space-between;
                     }
 
                     .Champ-3 {
@@ -990,6 +1103,7 @@ main {
                         align-items: first baseline;
                         gap: 6px;
                         padding: 0;
+                        justify-content: space-between;
                     }
 
                     .Champ-4 {
@@ -998,6 +1112,7 @@ main {
                         align-items: first baseline;
                         gap: 6px;
                         padding: 0;
+                        justify-content: space-between;
                     }
                 }
 
@@ -1005,10 +1120,10 @@ main {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    align-items: center;
+                    /* align-items: center; */
                     padding: 0 0;
                     gap: 20px;
-                    background-color: whitesmoke;
+                    justify-content: space-between;
 
                     .Erreur-validation {
                         display: flex;
@@ -1016,6 +1131,7 @@ main {
                         align-items: flex-start;
                         gap: 6px;
                         padding: 0;
+                        justify-content: space-between;
                     }
 
                     .Actions-formulaire {
@@ -1024,6 +1140,7 @@ main {
                         align-items: flex-start;
                         gap: 8px;
                         padding: 0;
+                        justify-content: space-between;
                     }
                 }
             }
@@ -1034,6 +1151,8 @@ main {
                 align-items: first baseline;
                 gap: 11px;
                 padding: 18px 18px;
+                justify-content: space-between;
+                background-color: #FFFEFA;
 
                 .Titre-confirmation {
                     display: flex;
@@ -1041,6 +1160,7 @@ main {
                     align-items: first baseline;
                     padding: 0;
                     gap: 10px;
+                    justify-content: space-between;
 
                     .Avertissement {
                         display: flex;
@@ -1048,6 +1168,7 @@ main {
                         align-items: flex-start;
                         gap: 8px;
                         padding: 0 0;
+                        justify-content: space-between;
                     }
                 }
 
@@ -1057,6 +1178,7 @@ main {
                     align-items: flex-end;
                     padding: 0;
                     gap: 8px;
+                    justify-content: space-between;
 
                     .Conserver {
                         display: flex;
@@ -1064,6 +1186,7 @@ main {
                         align-items: center;
                         gap: 8px;
                         padding: 0 12px;
+                        justify-content: space-between;
                     }
 
                     .Confirmer-suppression {
@@ -1072,6 +1195,8 @@ main {
                         gap: 0;
                         padding: 0 13px;
                         align-items: flex-start;
+                        justify-content: space-between;
+                        background-color: red;
                     }
                 }
             }
@@ -1083,6 +1208,7 @@ main {
             align-items: first baseline;
             gap: 20px;
             padding: 4px 0 0 0;
+            justify-content: space-between;
 
             .Etat-donnees {
                 display: flex;
@@ -1090,168 +1216,8 @@ main {
                 align-items: flex-start;
                 gap: 6px;
                 padding: 0;
+                justify-content: space-between;
             }
         }
     }
 }
-
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-    background-image: url("img/tajine-generique.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-header {
-    background-color: #315E43;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 240px;
-    width: 240px;
-    min-height: 100vh;
-    height: auto;
-    padding: 30px 20px 24px;
-    gap: 32px;
-}
-
-header .Identite-Cantina h1 {
-    color: whitesmoke;
-    display: block;
-}
-
-main {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.Barre-d-application {
-    width: 100%;
-    min-height: 100px;
-    height: auto;
-    padding: 20px 36px;
-    background-color: rgba(223, 226, 213, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.Tableau-d-bord {
-    width: 100%;
-    min-width: 0;
-    flex: 1;
-    padding: 32px 36px 28px;
-    background-color: rgba(245, 245, 220, 0.9);
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.Indicateurs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-.Indicateurs > [class^="Indicateur-"] {
-    flex: 1 1 180px;
-    min-width: 0;
-    width: auto;
-    background-color: #DFE2D5;
-}
-
-.Commandes-planning {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    background-color: transparent;
-}
-
-.Menus-semaine {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 12px;
-    background-color: transparent;
-}
-
-.Menus-semaine > [class^="Lundi"],
-.Menus-semaine > [class^="Mardi"],
-.Menus-semaine > [class^="Mercredi"],
-.Menus-semaine > [class^="Jeudi"],
-.Menus-semaine > [class^="Vendredi"] {
-    min-width: 0;
-}
-
-.Navigation-semaine,
-.Date,
-.Creneau-repas,
-.Budget-quotidien,
-.Badge {
-    background-color: transparent;
-}
-
-@media (max-width: 1000px) {
-    .Tableau-d-bord {
-        padding: 24px;
-    }
-
-    .Menus-semaine {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .Barre-d-application {
-        padding: 16px 24px;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 650px) {
-    body {
-        flex-direction: column;
-        background-attachment: scroll;
-    }
-
-    header {
-        width: 100%;
-        min-height: auto;
-        flex: none;
-        padding: 20px;
-    }
-
-    .Tableau-d-bord {
-        padding: 20px 16px;
-    }
-
-    .Barre-d-application {
-        padding: 16px;
-    }
-
-    .Menus-semaine {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .Indicateurs {
-        flex-direction: column;
-    }
-
-    .Tableau-d-bord .Accueil {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-} */
