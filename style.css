@@ -1,0 +1,1223 @@
+/* @import "tailwindcss"; */
+
+body {
+    display: flex;
+    background-image: url(img/tajine-generique.webp);
+    background-size: cover;
+    background-attachment: fixed; /* Optionnel : garde l'image fixe au scroll */
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    flex-direction: row;
+    
+   
+}
+
+header {
+    background-color: #315E43;
+    opacity: 0.9;
+    flex-direction: column;
+    width: 200px;
+    padding: 30px 20px 24px 24px;
+    gap: 32px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+
+    .Identite-Cantina {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+        justify-content: space-between;
+
+        h1 {
+            color: rgb(255, 255, 255);
+            display:contents;
+        }
+
+        img {
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            padding: 0;
+            align-items: center;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        gap: 9px;
+        padding: 0;
+        align-items: first baseline;
+        justify-content: space-between;
+
+        p {
+            color: #b9ceb8;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        /* .Lien-1  {
+            background-color: #FFFFFF;
+            opacity: 0.1;
+            display: flex;
+            flex-direction: row;
+            padding: 0 11px;
+            justify-content: space-between;
+            gap: 10px;
+
+            img {
+                background-color: #B9CEB8;
+                display: flex;
+                flex-direction: initial;
+            }
+
+            h6 {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        } */
+
+        /* .Lien-2, .Lien-3  {
+            opacity: 0.1;
+            display: flex;
+            flex-direction: row;
+            padding: 0 11px;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+
+            img {
+                background-color: black;
+                display: flex;
+                flex-direction: initial;
+            }
+
+            h6 {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 10px;
+                font-weight: normal;
+            }
+        } */
+    }
+
+    .Conseil {
+        opacity: 1;
+        gap: 12px;
+        padding: 14px 14px;
+
+        h3 {
+            color: #F2F4DB;
+        }
+
+        p {
+            color: #D0DDC8;
+        }
+    }
+
+    .Signature {
+        margin-top: auto;
+        border-top: solid #6ba883;
+        color: white;
+
+        p {
+            color: #B9CEB8
+        }
+    }
+}
+
+main {
+    /* flex: 1; Remplace le width: 500% pour occuper proprement l'espace restant */
+    display: flex;
+    flex-direction: column; /* Empile la barre d'application et le tableau de bord de haut en bas */
+    gap: 0;
+    padding: 0;
+}
+
+.Barre-d-application {
+    width: 100%; 
+    background-color: rgba(223, 226, 213, 0.9);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+    padding: 20px 36px;
+
+    .Fil-d-ariane {
+        display: flex;
+        gap: 10px;
+    }
+
+    .Preference-et-profil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+        .Theme-clair-sombre {
+            display: flex;
+        }
+
+        .Compte {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            button, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bolder;
+            }
+
+            img {
+                width: 14px;
+                height: 14px;
+                flex-shrink: 0;
+            }
+        }
+
+    }
+}
+
+.Tableau-d-bord {
+    width: 100%;
+    /* background-color: beige; */
+    background-color: rgba(245, 245, 220, 0.9);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 28px;
+    padding: 32px 36px 28px 36px;
+
+    .Syntese-semaine {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: stretch;
+        gap: 24px;
+
+        .Accueil {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            /* gap: 20px; */
+            width: 100%;
+            padding: 0;
+
+            .Titre-page {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 7px;
+
+                .Repere {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 7px;
+                    align-items: flex-start;
+                    padding: 0;
+
+                    p {
+                        font-family: initial;
+                        font-weight: bold;
+                        font-size: 10px;
+                        color: #253C30;
+                    }
+                }
+
+                h2 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    /* font-weight: normal; */
+                    color: #253C30;
+                }
+
+                p {
+                    font-size: 10px;
+                    color: #747B70;
+                }
+            }
+
+            .Notification-succes {
+                display: flex;
+                flex-direction: row;
+                background-color: #E9EEDD;
+                gap: 11px;
+                padding: 12px 16px;
+                align-items: flex-start;
+                .Message {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 2px;
+                    h2 {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #253C30;
+                    }
+                    p {
+                        font-weight: normal;
+                        font-size: 10px;
+                        color: #747B70;
+                    }
+                }
+            }
+        }
+
+        .Indicateurs {
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+            /* align-items: flex-start; */
+
+            .Indicateur-1 {
+                display: flex;
+                flex: 1px;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 13px;
+                align-items: flex-start;
+                padding: 18px 18px;
+                width: 100%;
+                background-color: #DFE2D5;
+
+                .Valeur-contexte {
+                    h3 {
+                        color: #253c25;
+                        font-weight: bold;
+                        /* font-size: 15px; */
+                    }
+
+                    p {
+                        color: #747B70;
+                        font-size: 9px;
+                        font-weight: bolder;
+                        /* background-color: aqua; */
+                    }
+                    gap: 5px;
+                    padding: 0;
+                    align-items: flex-start;
+                    /* background-color: aqua; */
+                }
+            }
+
+            .Indicateur-2 {
+                display: flex;
+                flex: 1px;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 13px;
+                align-items: flex-start;
+                padding: 18px 18px;
+                width: 100%;
+                background-color: #DFE2D5;
+
+                .Valeur-contexte {
+                    h3 {
+                        color: #253c25;
+                        font-weight: bold;
+                        /* font-size: 15px; */
+                    }
+
+                    p {
+                        color: #747B70;
+                        font-size: 9px;
+                        font-weight: bolder;
+                        /* background-color: aqua; */
+                    }
+                    gap: 5px;
+                    padding: 0;
+                    align-items: flex-start;
+                    /* background-color: aqua; */
+                }
+            }
+
+            .Indicateur-3 {
+                display: flex;
+                flex: 1px;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 13px;
+                align-items: flex-start;
+                padding: 18px 18px;
+                width: 100%;
+                background-color: #DFE2D5;
+
+                .Valeur-contexte {
+                    h3 {
+                        color: #253c25;
+                        font-weight: bold;
+                        /* font-size: 15px; */
+                    }
+
+                    p {
+                        color: #747B70;
+                        font-size: 9px;
+                        font-weight: bolder;
+                        /* background-color: aqua; */
+                    }
+                    gap: 5px;
+                    padding: 0;
+                    align-items: flex-start;
+                    /* background-color: aqua; */
+                }
+            }
+
+            .Indicateur-4 {
+                display: flex;
+                flex: 1px;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 13px;
+                align-items: flex-start;
+                padding: 18px 18px;
+                width: 100%;
+                background-color: #E9EEDD;
+
+                .Valeur-contexte {
+                    h3 {
+                        color: #253c25;
+                        font-weight: bold;
+                        /* font-size: 15px; */
+                    }
+
+                    p {
+                        color: #747B70;
+                        font-size: 9px;
+                        font-weight: bolder;
+                        /* background-color: aqua; */
+                    }
+                    gap: 5px;
+                    padding: 0;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .Planning-menus {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+        width: 100%;
+        /* justify-content: space-between; */
+
+        .Commandes-planning {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 0;
+            justify-content: space-between;
+
+            .Semaine-affiche {
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+                align-items: flex-start;
+
+                .Navigation-semaine {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    padding: 0 10px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    background-color: #FFFEFA;
+                }
+
+                .Badge {
+                    background-color: #EEEBDD;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 0;
+                    padding: 3px 7px;
+                    justify-content: space-between;
+                }
+            }
+
+            .Actions {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                padding: 0;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .Mode-affichage {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: first baseline;
+                    gap: 3px;
+                    padding: 3px 3px;
+                    justify-content: space-between;
+                    background-color: #EEEBDD;
+
+                    .Vue-cartes-actives {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 10px;
+                        gap: 6px;
+                        background-color: #FFFEFA;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 11px;
+                            font-weight: bold;
+                        }
+                    }
+                    
+                    .Vue-tableau {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 10px;
+                        gap: 6px;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 10px;
+                            font-weight: normal;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+
+                .Imprimer {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 0 16px;
+                    justify-content: space-between;
+                    /* background-color: #FFFEFA; */
+                }
+
+                .Completer-semaine {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 0 16px;
+                    background-color: #315E43;
+
+                    p {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .Menus-semaine {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 0;
+            width: 100%;
+            justify-content: space-between;
+
+            .Lundi {
+                background-color: #DFE2D5;
+                gap: 10px;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px;
+                justify-content: space-between;
+
+                .Jour-etat {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 3px 0 5px 0;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: space-between;
+
+                    .Date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                        align-items: last baseline;
+                        justify-content: space-between;
+                    }
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Creneau-repas {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    padding: 12px 12px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                .Budget-quotidien {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 5px 0 3px 0;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+            }
+
+            .Mardi {
+                background-color: #DFE2D5;
+                gap: 10px;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px;
+                justify-content: space-between;
+
+                .Jour-etat {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 3px 0 5px 0;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: space-between;
+
+                    .Date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                        align-items: last baseline;
+                        justify-content: space-between;
+                    }
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Creneau-repas {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    padding: 12px 12px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                .Budget-quotidien {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 5px 0 3px 0;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+            }
+
+            .Mercredi {
+                background-color: #DFE2D5;
+                gap: 10px;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px;
+                justify-content: space-between;
+
+                .Jour-etat {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 3px 0 5px 0;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: space-between;
+
+                    .Date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                        /* align-items: last baseline; */
+                        justify-content: space-between;
+                    }
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Creneau-repas {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    padding: 12px 12px;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .Budget-quotidien {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 5px 0 3px 0;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+            }
+
+            .Jeudi {
+                background-color: #DFE2D5;
+                gap: 10px;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px;
+                justify-content: space-between;
+
+                .Jour-etat {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 3px 0 5px 0;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: space-between;
+
+                    .Date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                        align-items: last baseline;
+                        justify-content: space-between;
+                    }
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Creneau-repas {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    padding: 12px 12px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                .Budget-quotidien {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 5px 0 3px 0;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+            }
+
+            .Vendredi {
+                background-color: #DFE2D5;
+                gap: 10px;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px;
+                justify-content: space-between;
+
+                .Jour-etat {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 3px 0 5px 0;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: space-between;
+
+                    .Date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 8px;
+                        align-items: last baseline;
+                        justify-content: space-between;
+                    }
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Creneau-repas {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    padding: 12px 12px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                .Budget-quotidien {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 5px 0 3px 0;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+            }
+        }
+
+        .Regles-planning {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            width: 100%;
+            justify-content: space-between;
+
+            .Plafond {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+                align-items: flex-start;
+                padding: 0;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .Regle-affectation {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 7px;
+                justify-content: space-between;
+                background-color: #6ba883;
+            }
+        }
+    }
+
+    .Garde-manger {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        justify-content: space-between;
+
+        .Titre-ajout {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 0;
+            align-items: center;
+            justify-content: space-between;
+
+            .Introduction {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                gap: 5px;
+                padding: 0;
+                justify-content: space-between;
+
+                .Titre-nombre {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 10px;
+                    padding: 0;
+                    justify-content: space-between;
+
+                    .Badge {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 3px 7px;
+                        justify-content: space-between;
+                        align-items: first baseline;
+                        background-color: #EEEBDD;
+                    }
+
+                    p {
+                        color: #253C30;
+                    }
+                }
+            }
+
+            .Ajouter-recette {
+                display: flex;
+                flex-direction: row;
+                padding: 0 16px;
+                gap: 8px;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #315E43;
+            }
+        }
+
+        .Recherches-filtres {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+
+            .Filtres-categorie {
+                display: flex;
+                flex-direction: row;
+                align-items: first baseline;
+                gap: 6px;
+                padding: 0;
+                justify-content: space-between;
+            }
+
+            .Champ-recherche {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 9px;
+                padding: 0 12px;
+                justify-content: space-between;
+            }
+        }
+
+        .Disponibilite {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            justify-content: space-between;
+
+            .Titre-groupe {
+                display: flex;
+                gap: 8px;
+                padding: 0;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        .Recettes-disponibles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 0;
+            /* align-items: first baseline; */
+
+            .Fiche-recette-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+            }
+
+            .Fiche-recette-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+            }
+
+            .Fiche-recette-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                padding: 0;
+                justify-content: space-between;
+                gap: 0;
+            }
+
+            .Fiche-recette-4 {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                padding: 0;
+                justify-content: space-between;
+                gap: 0;
+            }
+
+            .Fiche-recette-5 {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                padding: 0;
+                justify-content: space-between;
+                gap: 0;
+            }
+        }
+
+        .Affectations {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            padding: 0;
+            align-items: center;
+            justify-content: space-between;
+
+            .Titre-groupe{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                padding: 0;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+
+        .Recette-assignes {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0;
+            /* align-items: stretch; */
+            justify-content: space-between;
+
+            .Recette-1 {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                align-items: first baseline;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .Recette-2 {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                padding: 0;
+                justify-content: space-between;
+                align-items: first baseline;
+            }
+        }
+
+
+    }
+
+    .Gestion-recettes {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        /* align-items: first baseline; */
+        padding: 0;
+        justify-content: space-between;
+
+        .Etats-gestion {
+            display: flex;
+            flex-direction: row;
+            /* align-items: first baseline; */
+            gap: 18px;
+            padding: 0;
+            justify-content: space-between;
+
+            .Ajout-recette {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                /* align-items: first baseline; */
+                padding: 18px 18px;
+                justify-content: space-between;
+
+                .En-tete-formulaire {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0;
+                    gap: 20px;
+                    justify-content: space-between;
+
+                    .Titre {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 9px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Champs-recette {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: first baseline;
+                    padding: 0;
+                    gap: 14px;
+                    justify-content: space-between;
+
+                    .Champ-1 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: first baseline;
+                        gap: 6px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+
+                    .Champ-2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: first baseline;
+                        gap: 6px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+
+                    .Champ-3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: first baseline;
+                        gap: 6px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+
+                    .Champ-4 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: first baseline;
+                        gap: 6px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Validation-action {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    /* align-items: center; */
+                    padding: 0 0;
+                    gap: 20px;
+                    justify-content: space-between;
+
+                    .Erreur-validation {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 6px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+
+                    .Actions-formulaire {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 8px;
+                        padding: 0;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            .Confirmation-suppression {
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                gap: 11px;
+                padding: 18px 18px;
+                justify-content: space-between;
+                background-color: #FFFEFA;
+
+                .Titre-confirmation {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: first baseline;
+                    padding: 0;
+                    gap: 10px;
+                    justify-content: space-between;
+
+                    .Avertissement {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 8px;
+                        padding: 0 0;
+                        justify-content: space-between;
+                    }
+                }
+
+                .Actions-suppression {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    padding: 0;
+                    gap: 8px;
+                    justify-content: space-between;
+
+                    .Conserver {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 0 12px;
+                        justify-content: space-between;
+                    }
+
+                    .Confirmer-suppression {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        padding: 0 13px;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+
+        .Pied-page {
+            display: flex;
+            flex-direction: row;
+            align-items: first baseline;
+            gap: 20px;
+            padding: 4px 0 0 0;
+            justify-content: space-between;
+
+            .Etat-donnees {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 6px;
+                padding: 0;
+                justify-content: space-between;
+            }
+        }
+    }
+}

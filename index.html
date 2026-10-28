@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cantina</title>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header >
+            <div class="Identite-Cantina">
+                <img src="img/SVGVector.svg">
+                <h1>cantina</h1>
+            </div>
+            <div class="navigation">
+                <p>LA CUISINE YOUCODE</p>
+                <button class="Lien-1">
+                    <img src="img/layout-dashboard.png">
+                    <h6>Vue d'ensemble</h6>
+                </button>
+                <button class="Lien-2">
+                    <img src="img/cooking-pot.png">
+                    <h6>Garde-manger</h6>
+                </button>
+                <button class="Lien-3">
+                    <img src="img/history.png">
+                    <h6>Historique</h6>
+                </button>
+            </div>
+            <div class="Conseil">
+                <img src="img/left.png">
+                <h3>L'automne à table</h3>
+                <p>Courges, coings et légumes du marché : place aux saveurs de saison.</p>
+                <p>LOCAL & DE SAISON</p>
+            </div>
+            <div class="Signature">
+                <h2>YouCode</h2>
+                <p>On apprend. On partage.</p>
+            </div>
+        </header>
+    
+        <main>
+
+            <section class="Barre-d-application">
+                <article class="Fil-d-ariane">
+                    <a href="#">Espace responsable</a>
+                    <button>/</button>
+                    <a href="#">Tableau de bord</a>
+                </article>
+                <article class="Preference-et-profil">
+                    <div class="Theme-clair-sombre">
+                        <button class="sun"><img src="img/Thème clair actif.png"></button>
+                        <button class="moon"><img src="img/Thème sombre.png"></button>
+                    </div>
+                    <button>|</button>
+                    <div class="Compte">
+                        <button>SB</button>
+                        <span class="Identitee">
+                            <h4>Salma Bennani</h4>
+                            <p>Responsable cantine</p>
+                        </span>
+                        <!-- <button>
+                            <img src="img/chevron-down.png">
+                        </button> -->
+                        <div>
+                            <!-- <label for="sujet">Sujet</label> -->
+                            <select id="sujet" name="sujet">
+                                <option><img src="img/chevron-down.png"></option>
+                                <option value="info">Salma Bennni</option>
+                                <option value="devis">Idriss Fassi</option>
+                                <option>Mohammed Ribati</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="Tableau-d-bord">
+                <div class="Syntese-semaine">
+                    <article class="Accueil">
+                        <aside class="Titre-page">
+                            <span class="Repere">
+                                <img src="img/sprout.png">
+                                <p>BIEN MANGER, BIEN APPRENDRE</p>
+                            </span>
+                            <h2>Au menu cette semaine</h2>
+                            <p>Composez des repas de saison pour les apprenants Youcode</p>
+                        </aside>
+                        <aside class="Notification-succes">
+                            <button class="cicrcle-check">
+                                <img src="img/circle-check.png">
+                            </button>
+                            <span class="Message">
+                                <h3>Menu enregistré</h3>
+                                <p>Vos dernières affectations sont sauvegardées</p>
+                            </span>
+                            <button class="x">
+                                <img src="img/x.png">
+                            </button>
+                        </aside>
+                    </article>
+                    <article class="Indicateurs">
+
+                        <aside class="Indicateur-1">
+                            <span class="Valeur-contexte">
+                                <p>RECETTE EN RÉSERVE</p>
+                                <h3>5</h3>
+                                <p>disponibles . 15 recettes au total</p>
+                            </span>
+                            <button>
+                                <img src="img/cooking-pot.png">
+                            </button>
+                        </aside>
+
+                        <aside class="Indicateur-2">
+                            <span class="Valeur-contexte">
+                                <p>JOURS PRÊTS</p>
+                                <h3>2/5</h3>
+                                <p>10 créneaux remplis sur 15</p>
+                            </span>
+                            <button>
+                                <img src="img/calendar-check.png">
+                            </button>
+                        </aside>
+
+                        <aside class="Indicateur-3">
+                            <span class="Valeur-contexte">
+                                <p>COÛT APPRENANT</p>
+                                <h3>156 DH</h3>
+                                <p>cette semaine . total provisoir</p>
+                            </span>
+                            <button>
+                                <img src="img/wallet.png">
+                            </button>
+                        </aside>
+
+                        <aside class="Indicateur-4">
+                            <span class="Valeur-contexte">
+                                <p>ÉQUILIBRE ALIMENTAIRE</p>
+                                <h3>Assuré</h3>
+                                <p>2 plats végétariens au planning</p>
+                            </span>
+                            <button>
+                                <img src="img/left.png">
+                            </button>
+                        </aside>
+
+                    </article>
+                </div>
+
+                <div class="Planning-menus">
+                    <article class="Commandes-planning">
+                        <aside class="Semaine-affiche">
+                            <h3>Le planning</h3>
+                            <span class="Navigation-semaine">
+                                <button class="chevron-left">
+                                    <img src="img/chevron-left.png">
+                                </button>
+                                <div class="Période">
+                                    <button class="calendar-days">
+                                        <img src="img/calendar-check.png">
+                                    </button>
+                                    <p>19 - 23 octobre 2026</p>
+                                </div>
+                                <button class="chevron-right">
+                                    <img src="img/chevron-right.png">
+                                </button>
+                            </span>
+                            <span class="Badge">
+                                <p>Semaine 43</p>
+                            </span>
+                        </aside>
+                        <aside class="Actions">
+                            <span class="Mode-affichage">
+                                <div class="Vue-cartes-actives">
+                                    <button class="columns-3">
+                                        <img src="img/columns-3.png">
+                                    </button>
+                                    <p>Vue Cartes</p>
+                                </div>
+                                <div class="Vue-tableau">
+                                    <button class="table-2">
+                                        <img src="img/table-2.png">
+                                    </button>
+                                    <p>Vue tableau</p>
+                                </div>
+                            </span>
+                            <button class="Imprimer">
+                                <img src="img/printer.png">
+                                <p>Imprimer</p>  
+                            </button>
+                            <button class="Completer-semaine">
+                                <span class="wand-sparkles">
+                                    <img src="img/wand-sparkles.png">
+                                </span>
+                                <p>Compléter la semaine</p>
+                            </button>
+                        </aside>
+                    </article>
+                    <article class="Menus-semaine">
+                        <aside class="Lundi">
+                            <div class="Jour-etat">
+                                <span class="Date">
+                                    <p>Lundi</p>
+                                    <p>19 oct.</p>
+                                </span>
+                                <span class="Badge">
+                                    <img src="img/Badge.png">
+                                </span>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Entrée</p>
+                                    </span>
+                                    <p>9 DH</p>
+                                </div>
+                                <p>Zaalouk d'aubergies</p>
+                                <div class="Qualite-retrait">
+                                    <p>Végétarien</p>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Plat principal</p>
+                                    </span>
+                                    <p>28 DH</p>
+                                </div>
+                                <p>Tajine de poulet aux olives</p>
+                                <div class="Qualite-retrait">
+                                    <p>Classique</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Dessert</p>
+                                    </span>
+                                    <p>7 DH</p>
+                                </div>
+                                <p>Oranges à la cannelle</p>
+                                <div class="Qualite-retrait">
+                                    <p>Bio</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Budget-quotidien">
+                                <span class="Total">
+                                    <p>Total du jour</p>
+                                    <p>44/50 DH max.</p>
+                                </span>
+                                <span class="Jauge-budget">
+                                    <p>Barre de Progression</p>
+                                </span>
+                                <p>6 DH de marge</p>
+                            </div>
+                        </aside>
+                        <aside class="Mardi">
+                            <div class="Jour-etat">
+                                <span class="Date">
+                                    <p>Mardi</p>
+                                    <p>20 oct.</p>
+                                </span>
+                                <span class="Badge">
+                                    <p>v Prêt</p>
+                                </span>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Entrée</p>
+                                    </span>
+                                    <p>8 DH</p>
+                                </div>
+                                <p>Carottes au umin</p>
+                                <div class="Qualite-retrait">
+                                    <p>Bio</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Plat principal</p>
+                                    </span>
+                                    <p>28 DH</p>
+                                </div>
+                                <p>Couscous aux sept légumes</p>
+                                <div class="Qualite-retrait">
+                                    <p>Végétarien</p>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Dessert</p>
+                                    </span>
+                                    <p>10 DH</p>
+                                </div>
+                                <p>Yaourt aux dattes</p>
+                                <div class="Qualite-retrait">
+                                    <p>Classique</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Budget-quotidien">
+                                <span class="Total">
+                                    <p>Total du jour</p>
+                                    <p>46/50 DH max.</p>
+                                </span>
+                                <span class="Jauge-budget">
+                                    <p>Barre de Progression</p>
+                                </span>
+                                <p>4 DH de marge</p>
+                            </div>
+                        </aside>
+                        <aside class="Mercredi">
+                            <div class="Jour-etat">
+                                <span class="Date">
+                                    <p>Mercredi</p>
+                                    <p>21 oct.</p>
+                                </span>
+                                <span class="Badge">
+                                    <p>2/3</p>
+                                </span>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Entrée</p>
+                                    </span>
+                                    <p>8 DH</p>
+                                </div>
+                                <p>Salade de betteraves</p>
+                                <div class="Qualite-retrait">
+                                    <p>Bio</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Plat principal</p>
+                                    </span>
+                                    <p>27 DH</p>
+                                </div>
+                                <p>Poisson à la chermoula</p>
+                                <div class="Qualite-retrait">
+                                    <p>Classique</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p class=" ">Dessert</p>
+                                    </span>
+                                </div>
+                                <div class="Ajouter-creneau">
+                                    <button class="Plus">
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
+                                </div>
+                                <p>Depuis le garde-manger</p>
+                            </div>
+                            <div class="Budget-quotidien">
+                                <span class="Total">
+                                    <p>Total du jour</p>
+                                    <p>35/50 DH max.</p>
+                                </span>
+                                <span class="Jauge-budget">
+                                    <p>Barre de Progression</p>
+                                </span>
+                                <p>15 DH disponibles . à completer</p>
+                            </div>
+                        </aside>
+                        <aside class="Jeudi">
+                            <div class="Jour-etat">
+                                <span class="Date">
+                                    <p>Jeudi</p>
+                                    <p>22 oct.</p>
+                                </span>
+                                <span class="Badge">
+                                    <p>1/3</p>
+                                </span>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Entrée</p>
+                                    </span>
+                                </div>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
+                                </div>
+                                <p>Depuis le garde-manger</p>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Plat principal</p>
+                                    </span>
+                                    <p>28 DH</p>
+                                </div>
+                                <p>Lentilles à la marocaine</p>
+                                <div class="Qualite-retrait">
+                                    <p>Végétarien</p>
+                                    <button>
+                                        <img src="img/Qualité-Libellé.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Dessert</p>
+                                    </span>
+                                </div>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
+                                </div>
+                                <p>Depuis le garde-manger</p>
+                            </div>
+                            <div class="Budget-quotidien">
+                                <span class="Total">
+                                    <p>Total du jour</p>
+                                    <p>24/50 DH max.</p>
+                                </span>
+                                <span class="Jauge-budget">
+                                    <p>Barre de Progression</p>
+                                </span>
+                                <p>26 DH disponibles . à compléter</p>
+                            </div>
+                        </aside>
+                        <aside class="Vendredi">
+                            <div class="Jour-etat">
+                                <span class="Date">
+                                    <p>Vendredi</p>
+                                    <p>23 oct.</p>
+                                </span>
+                                <span class="Badge">
+                                    <p>1/3</p>
+                                </span>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Entrée</p>
+                                    </span>
+                                </div>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
+                                </div>
+                                <p>Depuis le garde-manger</p>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Plat principal</p>
+                                    </span>
+                                </div>
+                                <div class="Ajouter-créneau">
+                                    <button>
+                                        <img src="img/plus.png">
+                                    </button>
+                                    <p>Choisir une recette</p>
+                                </div>
+                                <p>Depuis le garde-manger</p>
+                            </div>
+                            <div class="Creneau-repas">
+                                <div class="Categorie-prix">
+                                    <span class="Badge">
+                                        <p>Dessert</p>
+                                    </span>
+                                    <p>7 DH</p>
+                                </div>
+                                <p>Compote de coings</p>
+                                <div class="Qualite-retrait">
+                                    <p>Bio</p>
+                                    <button>
+                                        <img src="img/x.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Budget-quotidien">
+                                <span class="Total">
+                                    <p>Total du jour</p>
+                                    <p>7/50 DH max.</p>
+                                </span>
+                                <span class="Jauge-budget">
+                                    <p>Barre de Progression</p>
+                                </span>
+                                <p>43 DH disponibles . à compléter</p>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="Regles-planning">
+                        <aside class="Plafond">
+                            <button class="shield-check">
+                                <img src="img/shield-check.png">
+                            </button>
+                            <p>50 DH maximum par jour et par apprenant. Aucun dépassement autorisé</p>
+                        </aside>
+                        <aside class="Regle-affectation">
+                            <button class="info">
+                                <img src="img/info.png">
+                            </button>
+                            <p>Une recette, un seul créneau, dans sa catégorie.</p>
+                        </aside>
+                    </article>
+                </div>
+
+                <div class="Garde-manger">
+                    <section class="Titre-ajout ">
+                        <article class="Introduction">
+                            <span class="Titre-nombre">
+                                <p>Le garde-manger</p>
+                                <aside class="Badge">
+                                    <p>15 recettes</p>
+                                </aside>
+                            </span>
+                            <p>Votre réserve de recettes.Affectez chaque recette au jour de votre choix.</p>
+                        </article>
+                        <article class="Ajouter-recette">
+                            <button>
+                                <img src="img/Vector.png">
+                            </button>
+                            <p>Ajouter une recette</p>
+                        </article>
+                    </section>
+
+                    <section class="Recherches-filtres">
+                        <article class="Filtres-categorie">
+                            <aside class="Filtre">
+                                <p>Toutes.15</p>
+                            </aside>
+                            <aside class="Filtre">
+                                <p>Entrées</p>
+                            </aside>
+                            <aside class="Filtre">
+                                <p>Plats</p>
+                            </aside>
+                            <aside class="Filtre">
+                                <p>Desserts</p>
+                            </aside>
+                        </article>
+                        <article class="Champ-recherche">
+                            <button class="search">
+                                <img src="img/search.png">
+                            </button>
+                            <p>Recherche une recette</p>
+                            <p>¤ K</p>
+                        </article>
+                    </section>
+
+                    <section class="Disponibilite">
+                        <article class="Titre-groupe">
+                            <p>Indicateur</p>
+                            <p>EN RÉSERVE</p>
+                            <p>5 recettes disponibles</p>
+                        </article>
+                        <p>Choisissez un jour dans le selecteur pour l'affecter.</p>
+                    </section>
+
+                    <section class="Recettes-disponibles">
+                        <article class="Fiche-recette-1">
+                            <img src="img/Photo du plat 1.png">
+                            <aside class="Détails-recette">
+                                <span class="Categorie-tarif">
+                                    <div class="Badge">
+                                        <p>Dessert</p>
+                                    </div>
+                                    <p>8 DH</p>
+                                </span>
+                                <p>Pommes rôties au miel</p>
+                                <span class="Qualité-actions">
+                                    <div class="Badge">
+                                        <p>Bio</p>
+                                    </div>
+                                    <div class="Actions-recettes">
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                    </div>
+                                </span>
+                                <span class="Selecteur-affectations">
+                                    <div class="Affectation">
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
+                                        <p>En réserve</p>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
+                                </span>
+                            </aside>
+                        </article>
+                        <article class="Fiche-recette-2">
+                            <img src="img/Photo du plat 2.png">
+                            <aside class="Détails-recette">
+                                <span class="Categorie-tarif">
+                                    <div class="Badge">
+                                        <p>Entrée</p>
+                                    </div>
+                                    <p>9 DH</p>
+                                </span>
+                                <p>Velouté de potiron</p>
+                                <span class="Qualité-actions">
+                                    <div class="Badge">
+                                        <p>Bio</p>
+                                    </div>
+                                    <div class="Actions-recettes">
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                    </div>
+                                </span>
+                                <span class="Selecteur-affectations">
+                                    <div class="Affectation">
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
+                                        <p>En réserve</p>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
+                                </span>
+                            </aside>
+                        </article>
+                        <article class="Fiche-recette-3">
+                            <img src="img/Photo du plat 3.png">
+                            <aside class="Détails-recette">
+                                <span class="Categorie-tarif">
+                                    <div class="Badge">
+                                        <p>Dessert</p>
+                                    </div>
+                                    <p>8 DH</p>
+                                </span>
+                                <p>Poires à la fleur d'oranger</p>
+                                <span class="Qualité-actions">
+                                    <div class="Badge">
+                                        <p>Végétarien</p>
+                                    </div>
+                                    <div class="Actions-recettes">
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                    </div>
+                                </span>
+                                <span class="Selecteur-affectations">
+                                    <div class="Affectation">
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
+                                        <p>En réserve</p>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
+                                </span>
+                            </aside>
+                        </article>
+                        <article class="Fiche-recette-4">
+                            <img src="img/Photo du plat 4.png">
+                            <aside class="Détails-recette">
+                                <span class="Categorie-tarif">
+                                    <div class="Badge">
+                                        <p>Entrée</p>
+                                    </div>
+                                    <p>8 DH</p>
+                                </span>
+                                <p>Salade de lentilles</p>
+                                <span class="Qualité-actions">
+                                    <div class="Badge">
+                                        <p>Végétarien</p>
+                                    </div>
+                                    <div class="Actions-recettes">
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                    </div>
+                                </span>
+                                <span class="Selecteur-affectations">
+                                    <div class="Affectation">
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
+                                        <p>En réserve</p>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
+                                </span>
+                            </aside>
+                        </article>
+                        <article class="Fiche-recette-5">
+                            <img src="img/Photo du plat 5.png">
+                            <aside class="Détails-recette">
+                                <span class="Categorie-tarif">
+                                    <div class="Badge">
+                                        <p>Plat principal</p>
+                                    </div>
+                                    <p>30 DH</p>
+                                </span>
+                                <p>Couscous au poulet</p>
+                                <span class="Qualité-actions">
+                                    <div class="Badge">
+                                        <p>Classique</p>
+                                    </div>
+                                    <div class="Actions-recettes">
+                                        <button class="pencil">
+                                            <img src="img/pencil.png">
+                                        </button>
+                                        <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                    </div>
+                                </span>
+                                <span class="Selecteur-affectations">
+                                    <div class="Affectation">
+                                        <button class="archive">
+                                            <img src="img/archive.png">
+                                        </button>
+                                        <p>En réserve</p>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <img src="img/chevron-down.png">
+                                    </button>
+                                </span>
+                            </aside>
+                        </article>
+                    </section>
+
+                    <section class="Affectations">
+                        <aside class="Titre-groupe">
+                            <button class="lock-keyhole">
+                                <img src="img/lock-keyhole.png">
+                            </button>
+                            <p>DÉJA AU PLANNING</p>
+                            <p>10 recettes assignées</p>
+                        </aside>
+                        <p>Pour modifier ou supprimer une recette, remettez-la d'abord "En réserve".</p>
+                    </section>
+
+                    <section class="Recette-assignes">
+                        <article class="Recette-1">
+                            <aside class="Fiche-recette-1">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Entrée</p>
+                                        </div>
+                                        <p>9 DH</p>
+                                    </span>
+                                    <p>Zaalouk d'aubergines</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Végétarien</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                            <img src="img/trash-2.png">
+                                        </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Lundi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Lundi . Entrée</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-2">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Plat principal</p>
+                                        </div>
+                                        <p>28 DH</p>
+                                    </span>
+                                    <p>Tajine de poulet aux olives</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Classique</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Lundi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Lundi . Plat principal</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-3">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Dessert</p>
+                                        </div>
+                                        <p>7 DH</p>
+                                    </span>
+                                    <p>Oranges à la cannelle</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Bio</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <button>
+                                                <img src="img/calendar-check.png">
+                                            </button>
+                                            <p>Lundi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Lundi . Dessert</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-4">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Entrée</p>
+                                        </div>
+                                        <p>8 DH</p>
+                                    </span>
+                                    <p>Carottes au cumin</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Bio</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Mardi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Mardi . Entrée</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-5">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Plat principal</p>
+                                        </div>
+                                        <p>28 DH</p>
+                                    </span>
+                                    <p>Couscous aux sept légumes</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Végétarien</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Mardi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Mardi . Plat principal</p>
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="Recette-2">
+                            <aside class="Fiche-recette-1">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Dessert</p>
+                                        </div>
+                                        <p>10 DH</p>
+                                    </span>
+                                    <p>Yaourt aux dattes</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Classique</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Mardi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Mardi . Dessert</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-2">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Entrée</p>
+                                        </div>
+                                        <p>8 DH</p>
+                                    </span>
+                                    <p>Salades de betteraves</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Bio</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Mercredi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Mercredi . Entrée</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-3">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Plat principal</p>
+                                        </div>
+                                        <p>27 DH</p>
+                                    </span>
+                                    <p>Poisson à la chermoula</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Classique</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Mercredi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Mercredi . Plat principal</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-4">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Plat principal</p>
+                                        </div>
+                                        <p>24 DH</p>
+                                    </span>
+                                    <p>Lentilles à la marocaine</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Végétarien</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Jeudi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Jeudi . Plat principal</p>
+                                </div>
+                            </aside>
+                            <aside class="Fiche-recette-5">
+                                <div class="Details-recette">
+                                    <span class="Categorie-tarif">
+                                        <div class="Badge">
+                                            <p>Dessert</p>
+                                        </div>
+                                        <p>7 DH</p>
+                                    </span>
+                                    <p>Compote de coings</p>
+                                    <span class="Qualite-actions">
+                                        <div class="Badge">
+                                            <p>Bio</p>
+                                        </div>
+                                        <div class="Actions-recette">
+                                            <button class="lock-keyhole">
+                                                <img src="img/lock-keyhole.png">
+                                            </button>
+                                            <button class="trash-2">
+                                                <img src="img/trash-2.png">
+                                            </button>
+                                        </div>
+                                    </span>
+                                    <span class="Selecteur-affectation">
+                                        <div class="Affectation">
+                                            <div class="calendar-check">
+                                                <button>
+                                                    <img src="img/calendar-check.png">
+                                                </button>
+                                            </div>
+                                            <p>Vendredi</p>
+                                        </div>
+                                        <button class="chevron-down">
+                                            <img src="img/chevron-down.png">
+                                        </button>
+                                    </span>
+                                    <p>Assigné : Vendredi . Dessert</p>
+                                </div>
+                            </aside>
+                        </article>
+                    </section>
+                        
+                </div>
+
+                <div class="Gestion-recettes">
+                    <article class="Etats-gestion">
+                        <aside class="Ajout-recette">
+                            <span class="En-tete-formulaire">
+                                <div class="Titre">
+                                    <button class="circle-plus">
+                                        <img src="img/circle-plus.png">
+                                    </button>
+                                    <p>Nouvelle recette</p>
+                                    <p>Brouillon . non ajouté à la réserve</p>
+                                </div>
+                                <button class="x">
+                                    <img src="img/x.png">
+                                </button>
+                            </span>
+                            <span class="Champs-recette">
+                                <div class="champ-1">
+                                    <p>Nom de la recette *</p>
+                                    <span class="Valeur-saisie">
+                                        <p>Soupe de légumes</p>
+                                    </span>
+                                    <p>16 / 30 caractéres . 3 minimum</p>
+                                </div>
+                                <div class="champ-2">
+                                    <p>Catégorie *</p>
+                                    <span class="Valeur-saisie">
+                                        <p>Choisir une catégorie</p>
+                                    </span>
+                                    <p>Sélectionnez une catégorie</p>
+                                </div>
+                                <div class="champ-3">
+                                    <p>Prix par apprenant *</p>
+                                    <span class="Valeur-saisie">
+                                        <p>6 DH</p>
+                                    </span>
+                                    <p>V Prix positif</p>
+                                </div>
+                                <div class="champ-4">
+                                    <p>Badge qualitatif</p>
+                                    <span class="Valeur-saisie">
+                                        <p>Bio</p>
+                                    </span>
+                                    <p>Bio, Végétarien ou Classique</p>
+                                </div>
+                            </span>
+                            <span class="Validation-action">
+                                <div class="Erreur-validation">
+                                    <button>
+                                        <img src="img/circle-alert.png">
+                                    </button>
+                                    <p>La catégorie est obligatoire pour enregistrer.</p>
+                                </div>
+                                <div class="Actions-formulaire">
+                                    <span class="Annuler">
+                                        <p>Annuler</p>
+                                    </span>
+                                    <span class="Enregistrement-indispo">
+                                        <p>Enregistrer la recette</p>
+                                    </span>
+                                </div>
+                            </span>
+                        </aside>
+                        <aside class="Confirmation-suppression">
+                            <span class="Titre-confirmation">
+                                <div class="Avertissement">
+                                    <button class="trash-2">
+                                        <img src="img/trash-2.png">
+                                    </button>
+                                    <p>Supprimer cette recette ?</p>
+                                </div>
+                                <button class="x">
+                                    <img src="img/x.png">
+                                </button>
+                            </span>
+                            <p>"Pommes rôties au miel" sera retirée du garde-manger. Cette action est définitive.</p>
+                            <span class="Actions-suppression">
+                                <div class="Conserver">
+                                    <p>Conserver</p>
+                                </div>
+                                <div class="Confirmer-suppression">
+                                    <p>Supprimer</p>
+                                </div>
+                            </span>
+                        </aside>
+                    </article>
+                    <article class="Pied-page">
+                        <p>Cantina x Youcode . La bonne recette pour apprendre</p>
+                        <div class="Etat-donnees">
+                            <span class="cloud-check">
+                                <img src="img/cloud-check.png">
+                            </span>
+                            <p>Toutes les modifications sont enregistrées</p>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+            <script src="script.js" defer></script>
+        </main>
+    </body>
+</html>
